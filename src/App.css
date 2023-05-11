@@ -1,38 +1,57 @@
-.App {
+body {
+  background-color: rgb(74, 189, 109);
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: aliceblue;
+  margin-top: 50px;
+}
+
+.status {
+  text-align: center;
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: aliceblue;
+  font-weight: bold, black;
+  margin-top: 50px;
+}
+
+.board {
+  margin-top: 100px;
+}
+
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+
+}
+
+.game-info {
+  margin-top: 25px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ol.moves {
+  display: inline-block;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.square {
+  background: aliceblue;
+  border: 1px solid black;
+  float: left;
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
 }
